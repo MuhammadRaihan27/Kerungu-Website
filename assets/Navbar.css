@@ -1,0 +1,145 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.vektor1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23rem;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 0.5rem;
+}
+
+.close-button {
+  display: none;
+}
+
+.fa-times {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  visibility: hidden;
+  transition: all 0.35s ease-in;
+  display: none;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border-radius: 14px;
+  transition: 0.1s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: rgb(238, 238, 238);
+}
+.nav-item:hover a {
+  color: rgb(35, 38, 75);
+}
+
+.button-action {
+  cursor: pointer;
+}
+
+.button-action a {
+  margin-right: 10px;
+}
+
+.button-action a > button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button-action a > button > img {
+  width: 1.5rem;
+}
+
+@media (max-width: 756px) {
+  nav {
+    justify-content: space-between;
+    max-width: 700px;
+  }
+  .nav-link {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    min-height: 10%;
+    height: 100vh;
+    top: 0;
+    right: -10%;
+    background-color: #feb554;
+    transition: all 0.4s ease-in-out;
+    z-index: 99999;
+  }
+
+  .nav-link.active {
+    width: 50%;
+    right: 0%;
+  }
+
+  .nav-link.active .fa-times {
+    display: block;
+    visibility: visible;
+  }
+
+  .nav-link.active .nav-item a {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
+
+  .nav-item a {
+    font-size: 1.2rem;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  .close-button {
+    cursor: pointer;
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  .button-action {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-link.active {
+    width: 80%;
+  }
+}
+
+@media (max-width: 322px) {
+  .vektor1 {
+    right: -4rem;
+  }
+}

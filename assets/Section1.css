@@ -1,0 +1,150 @@
+#sec-1 .title {
+  margin-top: 5rem;
+}
+
+#sec-1 .title h1 {
+  line-height: 3.5rem;
+}
+
+#sec-1 .title h4 {
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
+#sec-1 .select-color {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  margin: 0.6rem 0rem 2rem 0rem;
+}
+
+.bulItem {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: salmon;
+  margin-right: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.arrow img {
+  width: 1rem;
+}
+
+#sec-1 .price {
+  display: flex;
+  align-items: center;
+}
+
+#sec-1 .price p {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+#sec-1 .price p > span {
+  font-size: 1rem;
+}
+
+#sec-1 .price a > button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background: rgb(255, 93, 120);
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+}
+
+#sec-1 .promo {
+  display: flex;
+  align-items: center;
+  margin-top: 4.5rem;
+}
+
+#sec-1 .promo .item {
+  display: flex;
+  width: max-content;
+  padding: rem;
+  margin-right: 1rem;
+}
+
+#sec-1 .promo .item p {
+  font-size: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+#sec-1 .promo .item img {
+  width: 1rem;
+}
+
+#sec-1 .col-img {
+  margin-left: 6rem;
+}
+
+.col .headset {
+  width: 25rem;
+}
+
+@media (max-width: 913px) {
+  #sec-1 .col-img .headset {
+    width: 20rem;
+    transform: translate(-60px, -20px);
+  }
+
+  #sec-1 .title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 756px) {
+  #sec-1 .col-img .headset {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  #sec-1 .title h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  #sec-1 .title h1 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+  }
+
+  #sec-1 .title h4 {
+    font-size: 1.3rem;
+  }
+
+  #sec-1 .select-color {
+    color: #fff;
+  }
+
+  #sec-1 .price a > button {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #sec-1 .promo .item:nth-child(2) > p {
+    color: #fff;
+  }
+}

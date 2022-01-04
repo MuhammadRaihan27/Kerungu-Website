@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Poppins:wght@300;400;500;600;700&family=Raleway&family=Rubik&display=swap");
+
+.fw-700 {
+  font-weight: 700;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-60 {
+  font-size: 60px;
+}
+.font-50 {
+  font-size: 50px;
+}
+.font-40 {
+  font-size: 40px;
+}
+.font-36 {
+  font-size: 36px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-24 {
+  font-size: 24px;
+}
+
+.text-dark {
+  color: #183b56;
+}
+.text-grey {
+  color: rgb(80, 80, 80);
+}
+.text-grey2 {
+  color: rgb(155, 155, 155);
+}
+.text-rgba {
+  color: rgba(24, 59, 86, 0.7);
+}
+.bg-pink02 {
+  background-color: #c56a72 !important;
+}
+.bg-yellow {
+  background-color: #feb554 !important;
+}
+.bg-green-old {
+  background-color: #606651 !important;
+}
+.bg-brown {
+  background-color: #edab7b !important;
+}
+.br-28 {
+  border-radius: 28px;
+}
+.br-24 {
+  border-radius: 24px;
+}
+.br-right {
+  border-right: 1px solid #dadada;
+}
+.ws-nowrap {
+  white-space: nowrap;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 756px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+.top {
+  margin-top: 10rem;
+}
+
+.btn-see {
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(243, 124, 144);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
